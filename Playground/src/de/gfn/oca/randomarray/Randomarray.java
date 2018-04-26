@@ -11,8 +11,10 @@ package de.gfn.oca.randomarray;
  */
 public class Randomarray {
     //Klassenvariablen
-    private static int arr[] = new int[100]; //array field default: 0
-    private static int valuecount[] = new int[10]; //array field default: 0
+    private static int arr[] = new int[200]; //array field default: 0
+    private static int randomrange = 19; //positiver int Wert für Zahlen von 0 - randomrange-1
+    private static int valuecount[] = new int[randomrange]; //array field default: 0
+    
     
     static void NumberCount() {
         System.out.println("\n-------- Zahlenhäufigkeit: --------");
@@ -36,7 +38,7 @@ public class Randomarray {
         int j = 1;
         for(int i=0; i<arr.length; i++) {
             
-            int rV = (int)(Math.random() * 10); // 0 <= rV < 10
+            int rV = (int)(Math.random() * randomrange); // 0 <= rV < 10
             arr[i] = rV;
             
             System.out.print(i + ": " + arr[i] + ", ");
