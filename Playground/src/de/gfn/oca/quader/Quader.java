@@ -25,31 +25,31 @@ public class Quader {
         this.hoehe = hoehe;
     }
     
-    public double KalkFlaeche(double L, double B){
-        flaeche = L * B;
+    public double KalkFlaeche(double side1, double side2){
+        flaeche = side1 * side2;
         return flaeche;
     }
     
-    public double KalkQuader(double H){
-        volumen = KalkFlaeche(laenge, breite) * H;
+    public double KalkQuader(){
+        volumen = KalkFlaeche(laenge, breite) * hoehe;
         return volumen;
     }
     
-    public double Kantenlaenge(double L, double B, double H){
-        kantenlaenge = 4*L + 4*B + 4*H;
+    public double Kantenlaenge(){
+        kantenlaenge = 4*laenge + 4*breite + 4*hoehe;
         return kantenlaenge;
     }
     
-    public double Oberflaeche (double L, double B, double H){
-        oberflaeche = 2 * KalkFlaeche(L, B) + 2 * KalkFlaeche(H, B) + 2 * KalkFlaeche(H, L);
+    public double Oberflaeche (){
+        oberflaeche = 2 * KalkFlaeche(laenge, breite) + 2 * KalkFlaeche(hoehe, breite) + 2 * KalkFlaeche(hoehe, laenge);
         return oberflaeche;
     }
     
     @Override
     public String toString(){
-        return "Der Quader hat eine Fläche von " + KalkQuader(hoehe) + " Einheiten\n"
-               + "und eine Kantenlaenge von " + Kantenlaenge(laenge, breite, hoehe) + " Einheiten\n"
-               + "und eine Oberfläche von " + Oberflaeche(laenge, breite, hoehe) + " Einheiten\n"
+        return "Der Quader hat eine Fläche von " + KalkQuader() + " Einheiten\n"
+               + "und eine Kantenlaenge von " + Kantenlaenge() + " Einheiten\n"
+               + "und eine Oberfläche von " + Oberflaeche() + " Einheiten\n"
                + "-----";
     }
     
