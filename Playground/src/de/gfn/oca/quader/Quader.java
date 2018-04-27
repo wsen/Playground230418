@@ -26,6 +26,7 @@ public class Quader {
         this.hoehe = hoehe;
     }
     
+    // Methoden
     public double KalkFlaeche(double side1, double side2){
         flaeche = side1 * side2;
         return flaeche;
@@ -59,7 +60,7 @@ public class Quader {
         System.out.println(q1);
         
         // -- Erweiterung KantenQuader eher unsinnvoll, --
-        // da Informationen nicht von 2 identischen Objekten 
+        // da Informationen nicht von 2 verschiedenen Objekten mit identischen Values
         // ausgegeben werden sollen, sondern von nur eim und dem selben Objekt.
         // Hier habe ich "erweitern Sie das Programm um ..." wörtlich ausgelegt ("extends") und dafür eine Subklasse eingrichtet.
         // Was nun dazu führt, dass statt 1 Objekt, jetzt 2 Objekte mit identischen Werten erzeugt werden müssen.
