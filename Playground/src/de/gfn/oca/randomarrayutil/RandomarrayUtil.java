@@ -1,0 +1,59 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package de.gfn.oca.randomarrayutil;
+import java.util.Random;
+
+/**
+ *
+ * @author student
+ */
+public class RandomarrayUtil {
+        //Klassenvariablen
+    private static int arr[] = new int[300]; //array field default: 0
+    private static int randomrange = 19; //positiver int Wert für Zahlen von 0 - randomrange-1
+    private static int valuecount[] = new int[randomrange]; //array field default: 0
+    
+    
+    static void NumberCount() {
+        System.out.println("\n-------- Zahlenhäufigkeit: --------");
+
+        // Zählvorgang
+        int total = 0;
+        for(int i=0; i<arr.length; i++) {
+            valuecount[arr[i]] = valuecount[arr[i]] + 1;
+            total++;
+        }
+        
+        //Ausgabe     
+        for(int i=0; i<valuecount.length; i++) {
+            System.out.println("Zahl " + i + ": " + valuecount[i]);    
+        }
+        System.out.println("-------- total: "+ total +" --------");
+    }
+    
+    
+    public static void main(String[] args) {    
+        Random rGen = new Random();
+        
+        int j = 1;
+        for(int i=0; i<arr.length; i++) {
+            
+            int rVal = rGen.nextInt(randomrange);
+            //(int)(Math.random() * randomrange); // 0 <= rVal < 10
+            arr[i] = rVal;
+            
+            System.out.print(i + ": " + arr[i] + ", ");
+            
+            if (j == 10) {
+                System.out.println();
+                j = 0;
+            } 
+            j++;
+        }
+        
+        NumberCount();      
+    }           
+}

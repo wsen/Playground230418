@@ -19,6 +19,7 @@ public class Quader {
     private double kantenlaenge;
     private double oberflaeche;
     
+    // Konstruktor
     public Quader(double laenge, double breite, double hoehe) {
         this.laenge = laenge;
         this.breite = breite;
@@ -54,10 +55,16 @@ public class Quader {
     }
     
     public static void main(String[] args) {
-        Quader q1 = new Quader(20.0,20,3);
+        Quader q1 = new Quader(20,10,80);
         System.out.println(q1);
         
-        KantenQuader kq1 = new KantenQuader(20.0,20.0,3.0);
+        // -- Erweiterung KantenQuader eher unsinnvoll, --
+        // da Informationen nicht von 2 identischen Objekten 
+        // ausgegeben werden sollen, sondern von nur eim und dem selben Objekt.
+        // Hier habe ich "erweitern Sie das Programm um ..." wörtlich ausgelegt ("extends") und dafür eine Subklasse eingrichtet.
+        // Was nun dazu führt, dass statt 1 Objekt, jetzt 2 Objekte mit identischen Werten erzeugt werden müssen.
+        // Als Anschauungsmaterial habe ich es erst mal gelassen.
+        KantenQuader kq1 = new KantenQuader(20,10.0,80.0);
         System.out.println(kq1);
     }
 }
