@@ -1,8 +1,7 @@
 package de.gfn.oca.basics;
 
-import de.gfn.oca.basics.sonstiges.Buch;
 import static java.lang.System.out;
-import static de.gfn.oca.basics.sonstiges.Buch.*;
+import static de.gfn.oca.basics.Buch.*;
 
 
 /**
