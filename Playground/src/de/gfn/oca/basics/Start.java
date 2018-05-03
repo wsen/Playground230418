@@ -42,5 +42,16 @@ public class Start {
         //b2.kleinerText = "Neuer Text";
         System.out.println(b.kleinerText);
         out.println(Buch.kleinerText);
+        
+        String s5 = "Moin";
+        
+        s5 = s5 + " Hamburg";
+        
+        String s6 = new String("Moin");
+        
+        String[] arr3 = new String[10];
+        
+        Object[][][] arr4 = new Object[10][][];
+        
     }
 }
