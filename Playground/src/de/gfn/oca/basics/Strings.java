@@ -33,6 +33,12 @@ public class Strings {
         System.out.println(s2 == s4);
         System.out.println(s2.equals(s4));
         
+        System.out.println("--------");
+         
+        String ss1 = "1";
+        String ss2 = ss1.concat("2");
+        s2.concat("3");
+        System.out.println(ss2);
         
         
     }
