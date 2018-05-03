@@ -1,4 +1,4 @@
-package de.gfn.oca.basics.sonstiges;
+package de.gfn.oca.basics;
 
 /**
  *
