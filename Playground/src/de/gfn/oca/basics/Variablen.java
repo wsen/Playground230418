@@ -46,11 +46,58 @@ public class Variablen {
         ModiTest mt = new ModiTest();
         //mt.zahl = 100000;
         
+        byte b = 10;
+        b = (byte) ModiTest.machWas(true, 1);
     }
 }
 
 class ModiTest {
     
     private int zahl;
+    
+    static int machWas(int i) {
+        System.out.println("INT");
+        return 2;
+    }
+    
+    static int machWas(boolean b) {
+        System.out.println("BOOL");
+        return 2;
+    }
+    
+    static int machWas(int i, boolean b) {
+        System.out.println("INT, BOOL");
+        return 2;
+    }
+    
+//    static int machWas(boolean b, int i) {
+//        System.out.println("BOOL, INT");
+//        return 2;
+//    }
+    
+    static int machWas(boolean b, long i) {
+        System.out.println("BOOL, LONG");
+        return 2;
+    }
+    
+    static int machWas(boolean b, int... i) {
+        System.out.println("BOOL, INT VARARG");
+        return 2;
+    }
+    
+    static int machWas(byte b) {
+        System.out.println("BYTE");
+        return 2;
+    }
+    
+    static int machWas(short s) {
+        System.out.println("SHORT");
+        return 2;
+    }
+    
+    static int machWas(double d) {
+        System.out.println("DOUBLE");
+        return 2;
+    }
     
 }
