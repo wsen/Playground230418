@@ -42,9 +42,20 @@ public class Variablen {
     public static void main(String[] args) {
      
         //Variablen v = new Variablen();
+      
+        
+        short xx = 14;
+        float yy = 13;
+        double zz = 30;
+        
+        System.out.println(xx * yy / zz);
         
         ModiTest mt = new ModiTest();
         //mt.zahl = 100000;
+        
+        boolean heinz = true;
+        if(heinz)
+            System.out.println("Yes, I am Heinz");
         
     }
 }
@@ -52,5 +63,7 @@ public class Variablen {
 class ModiTest {
     
     private int zahl;
+    
+    
     
 }
