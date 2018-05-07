@@ -53,15 +53,14 @@ public class Variablen {
         ModiTest mt = new ModiTest();
         //mt.zahl = 100000;
         
-<<<<<<< HEAD
         boolean heinz = true;
         if(heinz)
             System.out.println("Yes, I am Heinz");
         
-=======
+
         byte b = 10;
         b = (byte) ModiTest.machWas(true, 1);
->>>>>>> 7e7308c78cf565f110e51f5de2605ab0b07fab0a
+
     }
 }
 
@@ -69,9 +68,7 @@ class ModiTest {
     
     private int zahl;
     
-<<<<<<< HEAD
-    
-=======
+
     static int machWas(int i) {
         System.out.println("INT");
         return 2;
@@ -116,6 +113,5 @@ class ModiTest {
         System.out.println("DOUBLE");
         return 2;
     }
->>>>>>> 7e7308c78cf565f110e51f5de2605ab0b07fab0a
     
 }
