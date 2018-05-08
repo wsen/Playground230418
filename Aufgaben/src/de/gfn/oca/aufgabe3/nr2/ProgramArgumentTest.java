@@ -12,7 +12,7 @@ package de.gfn.oca.aufgabe3.nr2;
 import java.util.*;
 
 public class ProgramArgumentTest {
-    public static void main(String[] args) throws MyException {
+    public static void main(String[] args) throws MyException, InputMismatchException {
         Scanner scanner = new Scanner(System.in);
         int zahlenwert;
         
@@ -22,17 +22,19 @@ public class ProgramArgumentTest {
             
             if (zahlenwert < -10000 || zahlenwert > 10000) {
                 {
-                   throw new MyException("",zahlenwert);
+                   throw new MyException("Zu groß oder zu klein ", zahlenwert);
                 }
+            } else {
+                throw new MyException("Tschuldigung, aber alles gut mit " + zahlenwert);
             }
         } 
-        catch(InputMismatchException ex) {
-            //throw MyException("Totaler Mist, kein Integer");
-            System.out.println("Totaler Mist, kein Integer");
+        catch(InputMismatchException e) {
+            String s = e.toString();
+            System.out.println("Totaler Mist, kein Integer \n(" + s + ")" );
         }
-        catch(MyException ex)
-        {
-           System.out.println("Außerhalb des Zahlenbereichs");
-        }      
+        catch(MyException e) {
+            String s = e.toString();
+            System.out.println("(" + s + ")");
+        }     
     }
 }
