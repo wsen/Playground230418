@@ -6,11 +6,11 @@ package de.gfn.oca.aufgabenblatt3.aufgabe1;
  */
 public abstract class DreieckArten implements FlaechenInhalt{
     
-    private int a;
+    private final int a;
     
-    private int b;
+    private final int b;
     
-    private int c;
+    private final int c;
 
     public DreieckArten(int a, int b, int c) {
         this.a = a;
