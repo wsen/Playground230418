@@ -12,13 +12,24 @@ public class ProgrammArgumentTest {
     
         Scanner s = new Scanner(System.in);
         
+        
         while(true) {
-            System.out.print("Zahl:");
-            int zahl = s.nextInt();
-            if(zahl < -10000 || zahl > 10000) {
-                throw new MyException(123, "Fehler");
+            try {
+                System.out.print("Zahl:");
+                int zahl = s.nextInt();
+                
+                if(zahl < -10000 || zahl > 10000) {
+                    throw new MyException(123, "Fehler");
+                }
             }
-            
+            catch(MyException ex) {
+                //System.out.println(ex.getMeldungsNr());
+                ex.printStackTrace();
+            }
+            catch(Exception ex) {
+                System.out.println();
+                s.nextLine();
+            }
         }
     }
 }
