@@ -3,6 +3,7 @@ package de.gfn.oca.designpatterns.observer;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 /**
  *
@@ -32,7 +33,7 @@ public class ObserverTest {
 
 class TV implements Subject {
 
-    private List<Observer> observer = new ArrayList<>();
+    private List<Observer> observer = new CopyOnWriteArrayList<>();
     private Status status = Status.AUS;
     
     @Override
@@ -54,8 +55,13 @@ class TV implements Subject {
     @Override
     public void notifyObserver() {
         for(Observer o : observer) {
-            o.update(status);
+            o.update(this);
         }
+    }
+
+    @Override
+    public Status getStatus() {
+        return status;
     }
 }
 
@@ -68,12 +74,15 @@ class Scout implements Observer {
     }
 
     @Override
-    public void update(Status s) {
+    public void update(Subject s) {
         
-        switch(s) {
+        switch(s.getStatus()) {
             case AN: System.out.println(name + ": Super!"); break;
             case PAUSE: System.out.println(name + ": Neeee. Dann gehe ich Pipi machen!"); break;
-            case AUS: System.out.println(name + ": Ich bin Müde. Ins Bett!"); break;
+            case AUS: 
+                System.out.println(name + ": Ich bin Müde. Ins Bett!");
+                s.removeObserver(this);
+                break;
         }
     }
 }
@@ -81,9 +90,9 @@ class Scout implements Observer {
 class Tier implements Observer {
     
     @Override
-    public void update(Status s) {
+    public void update(Subject s) {
         
-        switch(s) {
+        switch(s.getStatus()) {
             case AN: System.out.println("Tier: Versteckt sich!"); break;
             case PAUSE: System.out.println("Tier: Klaut die Chips"); break;
             case AUS: System.out.println("Tier: Holt sich das ganze Essen"); break;

@@ -6,6 +6,6 @@ package de.gfn.oca.designpatterns.observer;
  */
 public interface Observer {
     
-    void update(Status s);
+    void update(Subject s);
     
 }
