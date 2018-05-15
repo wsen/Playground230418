@@ -29,6 +29,5 @@ public class MyException extends Exception{
     
     public int getMeldungsNr() {     
         return meldungsNr; // TODO: Mach irgendwas, keine Ahnung was !
-    }
-    
+    } 
 }

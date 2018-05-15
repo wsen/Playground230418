@@ -12,5 +12,7 @@ public interface Subject {
     
     void setStatus(Status s);
     
+    Status getStatus();
+    
     void notifyObserver();
 }
