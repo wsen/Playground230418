@@ -11,10 +11,25 @@ package de.gfn.oca.teststuff.nr2;
  */
 public class Test {
     public static void main(String[] args) {
-        B b = new B();
+        B bb = new B();
         C c = new C();
         //C a = (C) b;
-        b.machWas(); c.machWas(); //a.machWas();
+        bb.machWas(); c.machWas(); //a.machWas();
+        System.out.println("-------\n");
+        
+        String a = "abc";
+        String b = a.toUpperCase();
+        //a = a.toUpperCase();
+        
+        b = b.replace("B", "2").replace('C', '3');
+        System.out.println("a=" + a);
+        System.out.println("b=" + b);
+        
+        System.out.println("---Method Chaining----\n");
+        String start = "AniMaL   ";
+        String lowercase = start.trim().toLowerCase(); // "animal"
+        String result = lowercase.replace('a', 'A'); // "Animal"
+        System.out.println(result);
     }
 }
 
