@@ -16,12 +16,12 @@ public class Verwaltung {
     public static void main(String[] args) {
         
         Scanner scanner = new Scanner(System.in);
-        boolean exit = false;
         
         outer:
-        while(!exit) {
+        while(true) {
             
             Adresse a = new Adresse();
+            
             System.out.print("\nVorname: ");
             a.setVorname(scanner.next());
             
