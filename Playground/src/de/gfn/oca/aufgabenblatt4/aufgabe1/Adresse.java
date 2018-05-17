@@ -21,6 +21,15 @@ public class Adresse {
     private String ort;
     private String land;
 
+    // Initializer
+//    {
+//        // wird vor dem Konstruktor aufgerufen
+//    }
+//    
+//    static {
+//        // wird beim Laden der Klasse ausgeführt
+//    }
+    
     public static int getAnzahl() {
         return anzahl;
     }
