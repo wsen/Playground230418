@@ -1,4 +1,6 @@
+package de.gfn.oca.time;
 
+import java.time.Clock;
 import java.time.Duration;
 import java.time.Instant;
 import java.time.LocalDate;
@@ -6,10 +8,14 @@ import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.Month;
 import java.time.Period;
+import java.time.Year;
 import java.time.ZoneId;
 import java.time.ZoneOffset;
+import java.time.ZonedDateTime;
+import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 import java.time.temporal.TemporalUnit;
+import java.util.Date;
 
 /**
  *
@@ -81,6 +87,31 @@ public class TimeTest {
         
         System.out.println(Duration.between(s, e));
         
+        //Clock c = Clock.systemUTC();
         
+        LocalDate d5 = LocalDate.of(2018, Month.OCTOBER, 28);
+        LocalTime t5 = LocalTime.of(2, 0);
+        ZoneId z = ZoneId.of("Europe/Berlin");
+        ZonedDateTime zdt = ZonedDateTime.of(d5, t5, z);
+        System.out.println(zdt);
+        zdt = zdt.plusHours(2);
+        System.out.println(zdt);
+        
+        Date d6 = new Date();
+        System.out.println(d6);
+        
+        DateTimeFormatter f1 = DateTimeFormatter.ISO_DATE;
+        f1 = DateTimeFormatter.ofPattern("EEEEE dd. MMM yyyy");
+        LocalDate date = LocalDate.now();
+        //date = LocalDate.parse("20.05.17", f1);
+        System.out.println(date);
+        System.out.println(date.format(f1));
+        
+        DateTimeFormatter f2 = DateTimeFormatter.ISO_TIME;
+        f2 = DateTimeFormatter.ofPattern("HH:mm");
+        LocalTime time = LocalTime.now();
+        //time = LocalTime.parse("17:22", f2);
+        System.out.println(time);
+        System.out.println(time.format(f2));
     }
 }
