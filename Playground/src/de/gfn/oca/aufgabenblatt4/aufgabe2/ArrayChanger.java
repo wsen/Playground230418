@@ -1,6 +1,5 @@
 package de.gfn.oca.aufgabenblatt4.aufgabe2;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -42,6 +41,10 @@ public class ArrayChanger {
         arr[pos2] = w1;
     }
     
+    // Aufgabe
+    // swap die selbst Werte abfragt
+    // Kein neuer Scanner
+    
     public static String arrayToString(int[] arr) {
         StringBuilder sb = new StringBuilder();
         sb.append("[");
@@ -51,5 +54,4 @@ public class ArrayChanger {
         sb.append("]");
         return sb.toString();
     }
-    
 }

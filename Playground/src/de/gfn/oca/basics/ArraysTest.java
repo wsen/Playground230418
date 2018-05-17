@@ -42,5 +42,13 @@ public class ArraysTest {
             }
             System.out.println();
         }
+        
+        int i = 10;
+        
+        int y = i++ + i++ + i++;
+        System.out.println(y);
+        
+        int i1;
+        int i2 = i1 = 10; 
     }
 }
