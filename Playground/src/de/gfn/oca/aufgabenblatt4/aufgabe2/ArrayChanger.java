@@ -42,6 +42,12 @@ public class ArrayChanger {
         arr[pos2] = w1;
     }
     
+    // Aufgabe
+    // swap die selbst Werte abfragt
+    // nicht mehr draußen sondern in der Methode
+    // ein einziges Object des Scanners zu nutzen, also kein neuer
+    // public static void swap(int[] arr)
+    
     public static String arrayToString(int[] arr) {
         StringBuilder sb = new StringBuilder();
         sb.append("[");
