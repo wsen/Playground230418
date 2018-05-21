@@ -4,7 +4,7 @@ import de.gfn.oca.basics.Buch;
 import java.io.IOError;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.function.Predicate;
+//import java.util.function.Predicate;
 
 /**
  *
@@ -25,7 +25,7 @@ public class LambdaTest {
         
         int y = 20;
         
-        i = (int a, String b) -> {
+        i = (int a, String b) -> {   //My Interace - machWas
             System.out.println("Moin!..." + a);
             System.out.println(MyInterface.machWasStatic());
             //System.out.println(this);

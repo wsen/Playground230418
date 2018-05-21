@@ -4,7 +4,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 /**
- *
+ * Lambda mit eigendefiniertem Interface
  * @author tlubowiecki
  */
 public class DiceGen {

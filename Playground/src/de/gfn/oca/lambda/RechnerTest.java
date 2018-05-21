@@ -1,7 +1,7 @@
 package de.gfn.oca.lambda;
 
 /**
- *
+ * Lambda mit eigendefiniertem Interface
  * @author Administrator
  */
 public class RechnerTest {
