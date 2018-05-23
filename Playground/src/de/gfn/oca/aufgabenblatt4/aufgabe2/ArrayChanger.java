@@ -47,7 +47,7 @@ public class ArrayChanger {
     // nicht mehr draußen sondern in der Methode
     // ein einziges Object des Scanners zu nutzen, also kein neuer
     // public static void swap(int[] arr)
-    
+
     public static String arrayToString(int[] arr) {
         StringBuilder sb = new StringBuilder();
         sb.append("[");
