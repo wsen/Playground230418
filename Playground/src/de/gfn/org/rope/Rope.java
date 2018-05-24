@@ -3,14 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package de.gfn.oca.polym;
+package de.gfn.org.rope;
 
 /**
  *
  * @author wsen
  */
-public class Primate {
-    public boolean hasHair() {
-        return true;
-    }
+public class Rope {
+    public static int length = 0;
 }

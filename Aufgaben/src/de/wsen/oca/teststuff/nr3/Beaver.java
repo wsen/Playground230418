@@ -11,8 +11,9 @@ package de.wsen.oca.teststuff.nr3;
  */
 public class Beaver extends Rodent {
 
-    public Number chew() throws RuntimeException {
-        System.out.println("Beaver is chewing on wood");
-        return 2;
-    }
+//    @Override
+//    public Number chew() throws RuntimeException {
+//        System.out.println("Beaver is chewing on wood");
+//        return 2;
+//    }
 }

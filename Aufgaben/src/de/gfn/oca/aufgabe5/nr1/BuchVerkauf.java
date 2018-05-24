@@ -30,7 +30,7 @@ public class BuchVerkauf {
         if(predicate.test(buch)){  
             consumer = (y) -> 
             {
-                y.setPreis(Math.round(y.getPreis() * 0.88)); //12% discount
+                y.setPreis(y.getPreis() * 0.88); //12% discount
             };    
         } else {
             consumer = (y) -> 

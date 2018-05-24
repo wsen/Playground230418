@@ -11,7 +11,7 @@ package de.wsen.oca.teststuff.nr3;
  */
 public class Rodent {
 
-    public static Integer chew() throws Exception {
+    protected static Integer chew() throws Exception {
         System.out.println("Rodent is chewing");
         return 1;
     }

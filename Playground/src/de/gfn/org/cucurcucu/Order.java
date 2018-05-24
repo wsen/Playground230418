@@ -3,14 +3,25 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package de.gfn.oca.polym;
+package de.gfn.org.cucurcucu;
 
 /**
  *
  * @author wsen
  */
-public class Primate {
-    public boolean hasHair() {
-        return true;
+public class Order {
+
+    static String result = "";
+
+    {
+        result += "c";
+    }
+
+    static {
+        result += "u";
+    }
+
+    {
+        result += "r";
     }
 }

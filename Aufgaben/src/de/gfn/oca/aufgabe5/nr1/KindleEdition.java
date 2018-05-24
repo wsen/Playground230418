@@ -9,6 +9,7 @@ package de.gfn.oca.aufgabe5.nr1;
  *
  * @author student
  */
+
 public class KindleEdition {
     
     private String titel;

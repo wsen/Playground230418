@@ -9,8 +9,6 @@ package de.gfn.oca.polym;
  *
  * @author wsen
  */
-public class Primate {
-    public boolean hasHair() {
-        return true;
-    }
+public interface HasTail {
+    public boolean isTailStriped();
 }
