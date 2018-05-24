@@ -41,11 +41,11 @@ public class KindleEdition {
     
     //OUT: Titel, Preis
     public  void anzeigeBuch() {
-        System.out.println("Buchtitel: "+ getTitel()+ " Preis: "+ getPreis());
+        System.out.println("Buchtitel: "+ getTitel()+ " Preis: "+ getPreis() + "\n");
     }
     
     //OUT: Bucheigenschaft
     public static<T> void anzeigeEigenschaft(T eigenschaft) {
-        
+        System.out.println("> " + eigenschaft);
     }
 }

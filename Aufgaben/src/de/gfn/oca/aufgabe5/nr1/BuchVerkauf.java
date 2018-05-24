@@ -9,12 +9,13 @@ import java.util.function.Consumer;
 
 /**
  * 
- * https://stackoverflow.com/questions/4685563/how-to-pass-a-function-as-a-parameter-in-java
+ * 
  * https://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html
  * @author student
  */
 public class BuchVerkauf {
     
+    // just for Lern-FUN
     static void irgendwas (KindleEdition buch, Predicate<KindleEdition> predikatz){
         if(predikatz.test(buch)){
             buch.anzeigeBuch();
@@ -29,18 +30,19 @@ public class BuchVerkauf {
         if(predicate.test(buch)){  
             consumer = (y) -> 
             {
-                y.setPreis(y.getPreis() * 0.88); //12% discount
+                y.setPreis(Math.round(y.getPreis() * 0.88)); //12% discount
             };    
         } else {
             consumer = (y) -> 
             {
-                y.setPreis(y.getPreis() * 0.91); //9% discount
+                y.setPreis(Math.round(y.getPreis() * 0.91)); //9% discount
             };   
         }
         consumer.accept(buch);
         buch.anzeigeBuch();
     } 
     
+    // wozu? kann noch nix damit anfangen 
     static void anzeigeAttributemitConsumer(List<KindleEdition> liste , 
             Consumer<String> consumer1 , Consumer<Double> consumer2) {
         
@@ -68,7 +70,13 @@ public class BuchVerkauf {
         }
                 
         //berechnePreisKindleEdition (KindleEdition buch , Predicate<KindleEdition> predicate , Consumer<KindleEdition> consumer)
-        berechnePreisKindleEdition(buecher[2], p -> p.getSeitenanzahl() > 750, (x)-> x.getPreis());
+        for (int i = 0; i < buecher.length; i++) {
+            KindleEdition.anzeigeEigenschaft(buecher[i].getTitel());
+            KindleEdition.anzeigeEigenschaft(buecher[i].getPreis());
+            berechnePreisKindleEdition(buecher[i], p -> p.getSeitenanzahl() > 750, (x)-> x.getPreis());
+        }
+        
+        
     }
     
 }
