@@ -10,7 +10,7 @@ package de.gfn.oca.aufgabe5.nr1;
  * @author student
  */
 public class KindleEdition {
-
+    
     private String titel;
     private double preis;
     private int seitenanzahl;
@@ -38,8 +38,14 @@ public class KindleEdition {
     public void setSeitenanzahl(int seitenanzahl) {
         this.seitenanzahl = seitenanzahl;
     }
-
-    public static <T> void anzeigeBuch(T eigenschaft) {
-
+    
+    //OUT: Titel, Preis
+    public  void anzeigeBuch() {
+        System.out.println("Buchtitel: "+ getTitel()+ " Preis: "+ getPreis());
+    }
+    
+    //OUT: Bucheigenschaft
+    public static<T> void anzeigeEigenschaft(T eigenschaft) {
+        
     }
 }
