@@ -58,7 +58,7 @@ public class BuchVerkauf {
 
         Integer[] seitenArray = {806, 796, 454, 748};
 
-        KindleEdition buecher[] = new KindleEdition[4];
+        KindleEdition buecher[] = new KindleEdition[titelArray.length];
 
         //System.out.println(buecher.length);
 
