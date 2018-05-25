@@ -5,10 +5,10 @@
  */
 package de.gfn.org.staticimport;
 
-/**
- *
- * @author student
- */
+import java.util.Arrays;
+
 public class GoodNonStaticImport {
-    
+        public static void main(String[] args) {
+        Arrays.asList("one");
+    }
 }

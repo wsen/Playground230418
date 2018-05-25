@@ -6,17 +6,12 @@
 package de.gfn.org.staticimport;
 
 //import static java.util.Arrays; 
-// import static java.util.Arrays.asList;
+import static java.util.Arrays.asList;
+//  import java.util.Arrays;
 //static import java.util.Arrays.*;
 
-import java.util.Arrays;
-
-/**
- *
- * @author student
- */
 public class BadStaticImports {
     public static void main(String[] args) {
-        Arrays.asList("one");
+        asList("one");
     }
 }
