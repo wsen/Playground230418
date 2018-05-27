@@ -3,19 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package de.gfn.oca.canhopinterface;
+package de.gfn.org.overloading;
 
 /**
  *
  * @author wsen
  */
-public class Frog implements CanHop {
-
+public class Overloader {
     public static void main(String[] args) {
-        Frog frog1 = new TurtleFrog();
-        TurtleFrog frog2 = new TurtleFrog();
-        BrazilianHornedFrog frog3 = new BrazilianHornedFrog();
-        Object frog4 = new TurtleFrog();
+        
     }
-
 }

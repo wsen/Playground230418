@@ -9,6 +9,7 @@ package de.gfn.oca.canhopinterface;
  *
  * @author wsen
  */
-public class TurtleFrog {
+public class TurtleFrog extends Frog {
     
 }
+ 
