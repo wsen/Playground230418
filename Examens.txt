@@ -1,0 +1,60 @@
+
+
+1) 	D: double als if Argument -> must be boolean
+
+2) Vererbung, Initalisierung	
+	A: keine Instanz eines Interfaces; 
+	B: OK, 
+   	C:new -> Konstruktor: steht dieser zu Verfügung? 
+   	  exp: inkompatible Types, cannot be converted
+
+   	D: dito C:
+	E: OK
+	  exp: Jumpable var5 = (Jumpable)new ParentAnimal(); Cast auf Interface MÖGLICH
+
+3) tryCatch
+	A: no  not found
+	B: no: NullPointerException, EXISTS, sout no
+	C: OK: ArrayIndexOutOfBoundsException e
+	D: no: not found
+
+4) lokale Variable
+	D: fail 
+	  exp: uninitalisierte lokale Varialbe i
+	A,B,C: totaler Mist
+
+?5) lambda
+	A: no
+	B: no
+	C: OK
+	D: ?
+	E: no
+	F: no 
+
+6) switch	
+	A: no
+	B: OK
+	C: no
+	D: (ok with break: 10)
+
+7) Vererbung
+	A: no
+	  exp: kein no-argument-constructor
+	B: no
+	  exp: RED nicht typisiert und initialisert und kein String
+	C: OK
+	D: OK: Parent kann ChildObjekt erzeugen
+
+8) Vererbung, Initalisierung
+	A: OK -> ? Frage nach Default Intialisierung von age
+	B: no
+	C: no
+	D: no
+	E: no -> Don't compiles wenn Initalisierung nicht ok
+
+9) for ArrayList	
+	A:
+	B:
+	C:
+	D:
+	E:
