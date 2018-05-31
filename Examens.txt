@@ -53,8 +53,18 @@
 	E: no -> Don't compiles wenn Initalisierung nicht ok
 
 9) for ArrayList	
-	A:
+	A:Spring, Summer, Winter
 	B:
 	C:
 	D:
 	E:
+
+10) while
+	D.loop execute indefinitely, printing all even numbers, starting from 2.
+
+11) for
+	B:20
+
+
+12) 
+	
