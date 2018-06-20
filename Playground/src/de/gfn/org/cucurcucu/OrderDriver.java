@@ -17,5 +17,14 @@ public class OrderDriver {
         new Order();
         new Order();
         System.out.print(Order.result + " ");
+        System.out.println("----------");
+        char a = 'C';
+        a++; // a = (char)a+1
+        System.out.println(a);
+        System.out.println("----------");
+        Double d = 0.0;
+        System.out.println(d.BYTES);
+        System.out.println(d.SIZE);
+    
     }
 }

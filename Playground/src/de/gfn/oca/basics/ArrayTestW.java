@@ -14,6 +14,13 @@ public class ArrayTestW {
         int[] zahlen = new int[10]; //Positionen 0 bis 9
         zahlen[8] = 10;
         
+        String beans[] = new String[6];
+        int[][] types = new int[2][];
+        int[] types1[] = new int[2][];
+        int types2[][] = new int[2][];
+        //int[] nix = new int[];
+        int[] nix = new int[0];
+        
         System.out.println(zahlen);
         
         int[] z1 = {5,10,20,3,7};
