@@ -18,7 +18,8 @@ public class Tenary {
         
         if (y++ == 10) {
             if (y-- == 10) {
-                if (y == 10){} else {
+                //if (y == 10){} else {
+                if (y == 10); else {
                     y *= 3;
                 }
             } else {
