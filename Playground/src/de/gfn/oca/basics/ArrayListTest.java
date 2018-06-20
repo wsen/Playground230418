@@ -12,6 +12,7 @@ public class ArrayListTest {
     public static void main(String[] args) {
         
         ArrayList<String> list = new ArrayList<>();
+        //list.remove(0); // Compiles // IndexOutOfBoundsException
 //        list.add(1); 
 //        list.add(10.2);
         list.add("Peter");

@@ -14,6 +14,7 @@ import java.time.ZoneOffset;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
+import java.time.temporal.ChronoField;
 import java.time.temporal.TemporalUnit;
 import java.util.Date;
 
@@ -30,9 +31,10 @@ public class TimeTest {
         
         //d1 = d1.plusDays(10);
         //d1 = d1.minusDays(10);
-        d1 = d1.minus(10, ChronoUnit.DAYS);
+        //d1 = d1.minus(10, ChronoUnit.DAYS);
+        d1 = d1.with(ChronoField.DAY_OF_YEAR,30);
         
-        System.out.println(d1);
+        System.out.println("from: 1922, 2, 20:"+d1);
         
         System.out.println("----------------");
         
