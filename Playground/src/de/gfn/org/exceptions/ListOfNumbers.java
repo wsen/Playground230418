@@ -24,7 +24,7 @@ public class ListOfNumbers {
         }
     }
 
-    public void writeList() {
+    public void writeList() throws IOException {
 	// The FileWriter constructor throws IOException, which must be caught.
         // PrintWriter out = new PrintWriter(new FileWriter("OutFile.txt"));
         PrintWriter out = null;
