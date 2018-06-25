@@ -24,6 +24,7 @@ public class CharLetterOrDigit {
 //        System.out.println(Character.isLetterOrDigit(ch));
 
         char c = 'A'; //.-)
+        String s = abcd;
         System.out.print((char)calc(c)); //.-)
     }
     
