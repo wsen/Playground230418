@@ -10,5 +10,13 @@ package de.gfn.org.stringimmutable;
  * @author student
  */
 public class StringImmutable {
-    
+
+    public static void main(String[] args) {
+        Integer i = 10;
+        Integer j = i;
+        i++;
+        System.out.println(i);
+        System.out.println(j);
+    }
+
 }
