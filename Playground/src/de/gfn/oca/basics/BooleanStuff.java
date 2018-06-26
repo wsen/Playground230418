@@ -15,12 +15,21 @@ public class BooleanStuff {
         boolean xx = 5.0 != 5.001;
         System.out.println("Zuweisung eines bools: " + xx);
         
-        System.out.println("------");
+        System.out.println("--- int ---");
+        int i1 = 42;
+        double i2 = 42.0;
+        double i3 = i1;
+        System.out.println("i1 == i2: " + (i1 == i2));
+        System.out.println("i3 == i1: " + (i1 == i3));
+        
+        System.out.println("--- String ---");
         String a1 = new String("oinky1");
         String a2 = new String("oinky1");
         String a3 = a1;
+        System.out.println("a1 == a2: " + (a1 == a2));
+        System.out.println("a3 == a1: " + (a1 == a3));
         boolean woar = (a1.equals(a2));
-        System.out.println(woar);
+        System.out.println("woar: " + woar);
         System.out.println("-----------");
         
         System.out.println(9 / 3); // Outputs 3
