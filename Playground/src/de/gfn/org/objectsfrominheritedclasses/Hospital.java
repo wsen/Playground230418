@@ -20,15 +20,15 @@ public class Hospital {
         System.out.println(s1.age + s2.getSpecialization());
         System.out.println(s2.age + s1.getSpecialization());
 
-        ArrayList<String> seasons = new ArrayList<>();
-        seasons.add(1, "Spring");
-        seasons.add(2, "Summer");
-        seasons.add(3, "Autumn");
-        seasons.add(4, "Winter");
-        //seasons.remove(2);
-        seasons.forEach((s) -> {
-            System.out.print(s + ", ");
-        });
+//        ArrayList<String> seasons = new ArrayList<>();
+//        seasons.add(1, "Spring");
+//        seasons.add(2, "Summer");
+//        seasons.add(3, "Autumn");
+//        seasons.add(4, "Winter");
+//        //seasons.remove(2);
+//        seasons.forEach((s) -> {
+//            System.out.print(s + ", ");
+//        });
 
 //        java.util.List<String> values = new java.util.ArrayList<String>();
 //        values.add("Lisa");
