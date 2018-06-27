@@ -1,5 +1,9 @@
 package de.gfn.oca.basics;
 
+import java.util.Arrays;
+import java.util.Iterator;
+import java.util.List;
+
 /**
  *
  * @author tlubowiecki
@@ -41,6 +45,25 @@ public class ArraysTest {
                 System.out.print(z3[i][j]);
             }
             System.out.println();
+        }
+
+        
+        int i = 10;
+        
+        int y = i++ + i++ + i++;
+        System.out.println(y);
+        
+        int i1;
+        int i2 = i1 = 10; 
+        
+        System.out.println("-----------");
+        
+        List<String> l = Arrays.asList("Peter", "Max", "Hans");
+        Iterator<String> itr = l.iterator();
+        
+        while (itr.hasNext()) {
+            String next = itr.next();
+            System.out.println(next);
         }
     }
 }
