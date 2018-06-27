@@ -36,6 +36,18 @@ public class CollectionsUtilTest {
         Collections.shuffle(l1); // geht nur mit Liste aber nicht mit set treeSet 
         
         l1.forEach(System.out::println);
-
+        
+        System.out.println("---reverse order---");
+        
+        Collections.reverse(l1);
+        l1.forEach(System.out::println);
+        
+        System.out.println("---binarySearch---");
+        // 
+        Collections.sort(l1); // Sortieren wichtig für binarySearch
+        System.out.println(Collections.binarySearch(l1,"Cindy")); //Rückgabe -2
+        
+        //nicht gefunden: -> Rückgabe: Positon -1  * (-1) 
+        
     }
 }
