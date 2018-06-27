@@ -5,6 +5,8 @@
  */
 package de.gfn.ocp.collectionw;
 
+import java.time.LocalDate;
+import java.time.Month;
 import java.util.Collection;
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -12,7 +14,9 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.LinkedList;
+import java.util.NavigableSet;
 import java.util.Set;
+import java.util.SortedSet;
 import java.util.TreeSet;
 
 /**
@@ -144,11 +148,46 @@ public class CollectionTest1 {
         set5.add(2);
         
         set5.forEach((s)-> System.out.println(s));
+        
+        System.out.println("-------SET---------");
+        
+        NavigableSet<String> set6 = new TreeSet<>();
+        set6.add("c");
+        set6.add("D");
+        set6.add("e");
+        set6.add("a");
+        
+        set6.forEach((s)-> System.out.println(s));
+        
+        System.out.println("----------------");
+        
+        System.out.println(set6.higher("c"));
+        System.out.println(set6.lower("c"));
+    
+        System.out.println(set6.ceiling("a"));  //wird aufgerundet. wenn nicht gefunden, dann nächst höhere
+        System.out.println(set6.floor("e"));    //wird abgerundet -> das nächst niedrigere
+        
+        //set.6.subSet("a", "e"); //Sorted Set <> Navigable Set
+        
+        SortedSet<String> set7 = new TreeSet<>();
+        set7.subSet("a", "e");
+        set7.forEach((s)-> System.out.println(s));
+        
+        System.out.println("--------------");
+        
+        NavigableSet<LocalDate> set8 = new TreeSet<>();
+        
+        set8.add(LocalDate.of(2010, Month.MARCH, 15));
+        set8.add(LocalDate.of(1992, 7, 8));
+        set8.add(LocalDate.of(2015, 5, 8));
+    
     }
     
 }
 
 //1 mal null is in einem set möglich
 // Tree sortierte Struktur
-// Hash Reihenfolge zufällig (bis auf Zusatz), schnelle Struktur
+// HashSet Reihenfolge zufällig (bis auf Zusatz), schnelle Struktur
+// LinkedHashSet   behält seine Einfügereihenfolge (ist geordnet)
 // List Eingabereihenfolge
+// Set  Keine Duplikate (Mengen haben keine Duplikate z.B: User{id, user, name}
