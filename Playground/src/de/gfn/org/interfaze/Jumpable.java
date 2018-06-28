@@ -10,5 +10,5 @@ package de.gfn.org.interfaze;
  * @author student
  */
 public interface Jumpable {
-    
+    public abstract void fly(int speed);
 }

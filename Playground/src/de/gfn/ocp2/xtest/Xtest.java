@@ -1,62 +1,26 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package de.gfn.ocp2.xtest;
 
 /**
  *
  * @author student
  */
-class Xtest {
 
-}
+public class Xtest {
 
-public class Card {
-
-    private String rank;
-    private String suit;
-
-    public Card(String r, String s) {
-        if (r == null || s == null) {
-            throw new IllegalArgumentException();
-        }
-        rank = r;
-        suit = s;
-    }
-
-    public boolean equals(Object obj) {
-        if (!(obj instanceof Card)) {
-            return false;
-        }
-        Card c = (Card) obj;
-        return rank.equals(c.rank) && suit.equals(c.suit);
-    }
-
-    public int hashCode() {
-        return rank.hashCode();
-    }
-}
-
-class Lion {
-
-    private int idNumber;
-    private int age;
-    private String name;
-
-    public Lion(int idNumber, int age, String name) {
-        this.idNumber = idNumber;
-        this.age = age;
-        this.name = name;
-    }
-
-    @Override
-    public boolean equals(Object obj) {
-        if (!(obj instanceof Lion)) {
-            return false;
-        }
-        Lion otherLion = (Lion) obj;
-        return this.idNumber == otherLion.idNumber;
+    public static void main(String[] args) {
+        String ejgStr[] = new String[][]{{null}, new String[] {"a","b","c"}, {new String()}}[0];
+        String ejgStr1[] = null;
+        String ejgStr2[] = {null};
+        
+        System.out.println("ejgStr Array Länge: " + ejgStr.length);       
+        
+        System.out.println(ejgStr[0]);  //null
+        System.out.println(ejgStr2[0]); //null
+        System.out.println(ejgStr1[0]); //NullPointerException
+//        • Was ist die Ausgabe? (1) 
+//        A.null  NullPointerException
+//        B.null  null  NullPointerException
+//        C.NullPointerException
+//        D.null  null  null 
     }
 }

@@ -9,6 +9,6 @@ package de.gfn.org.interfaze;
  *
  * @author wsen
  */
-public interface Roamable {
+public interface Roamable extends Jumpable {
     
 }

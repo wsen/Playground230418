@@ -4,10 +4,19 @@ package de.gfn.ocp.innerclassw;
  *
  * @author student
  */
-public class InnerClassTest1 { //TopLever public oder package Scope
+public class InnerClassTest1 { //TopLevel public oder package Scope
  // Aüßere Klasse darf nicht benutzen was innere Klasse hat.
    // Statische Elemente nicht in inneren Klassen 
    // Möglich sind aber statische innere Klassen mit inneren statischen Members (siehe unten)
+    
+    static {
+        System.out.println("InnerClassTest1 static");
+    }
+
+    {
+        System.out.println("InnerClassTest1 init");
+    }
+    
     private static int outerStaticZahl = 4;
     private int outerZahl = 5;
     
@@ -16,7 +25,7 @@ public class InnerClassTest1 { //TopLever public oder package Scope
     
     public static void main(String[] args) {
         InnerClassTest1 ict1 = new InnerClassTest1();
-        Inner i = ict1.new Inner();
+       Inner i = ict1.new Inner();
         //Zugriff außerhalb
         InnerClassTest1.Inner j = ict1.new Inner();
         System.out.println(i.zahl); // so ist ein Zugriff auf inner möglich
@@ -48,7 +57,8 @@ public class InnerClassTest1 { //TopLever public oder package Scope
     }
     
    void machWas() {
-        abstract class LocalInner {
+        //abstract class LocalInner {
+        class LocalInner {
             {
                 System.out.println(outerStaticPubZahl);
                 System.out.println(outerPubZahl);
@@ -112,19 +122,3 @@ public class InnerClassTest1 { //TopLever public oder package Scope
         }
     }
 }
-
-
-/* git ToDo: Dirs/Packages refactoren/umbenennen
-CONFLICT (add/add): Merge conflict in Playground/src/de/gfn/oca/vererbung/VererbungTest10.java
-Auto-merging Playground/src/de/gfn/oca/lambda/LambdaTest5.java
-CONFLICT (add/add): Merge conflict in Playground/src/de/gfn/oca/lambda/LambdaTest5.java
-Auto-merging Playground/src/de/gfn/oca/collections/ArrayListTest2.java
-CONFLICT (add/add): Merge conflict in Playground/src/de/gfn/oca/collections/ArrayListTest2.java
-Auto-merging Playground/src/de/gfn/oca/basics/ShortTest.java
-CONFLICT (add/add): Merge conflict in Playground/src/de/gfn/oca/basics/ShortTest.java
-Auto-merging Playground/src/de/gfn/oca/basics/InitTest.java
-CONFLICT (add/add): Merge conflict in Playground/src/de/gfn/oca/basics/InitTest.java
-Auto-merging Playground/src/de/gfn/oca/basics/ArraysTest.java
-CONFLICT (content): Merge conflict in Playground/src/de/gfn/oca/basics/ArraysTest.java
-
-*/
