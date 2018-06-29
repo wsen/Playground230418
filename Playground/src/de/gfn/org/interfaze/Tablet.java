@@ -63,6 +63,9 @@ Interfaces:
     public
     reference to the name of the interface must be used like Hop.getJumpHeight()
 
-    
+Abstract Class:
+- Variables:
+    pulic static final
+- static abstractMethod
 
 */

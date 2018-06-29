@@ -10,6 +10,7 @@ package de.gfn.org.abstractmethods;
  * @author wsen
  */
 abstract class Animal{
+    public static final int urz = 42;
     void run(){
         System.out.println("Animal run");
     }
@@ -41,6 +42,7 @@ public class Whiz {
         dog.sound();
         dog.run();
         dog.number();
+        System.out.println("Echt Urz: " + dog.urz);
         
 //        int xx = 0;
 //        while(xx++ < 10) {}
