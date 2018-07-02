@@ -14,7 +14,7 @@ import java.util.Arrays;
 public class ArrayTest2 {
     public static void main(String[] args) throws Error {
         
-        int[] arr1 = new int[]{1,7,8,5,2};
+        int[] arr1 = new int[]{1,7,9,5,2};
         int[] arr4 = new int[]{1,7,8,5,2};
         
         Arrays.sort(arr1);
@@ -26,7 +26,8 @@ public class ArrayTest2 {
         
         System.out.println("--------");
         
-        System.out.println(Arrays.binarySearch(arr1, 3));
+        System.out.println(Arrays.binarySearch(arr1, 8));
+        // aus {1,2,5,7,9}  -> 
         
         System.out.println("--------");
         

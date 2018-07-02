@@ -11,7 +11,11 @@ import static java.util.Arrays.asList;
 //static import java.util.Arrays.*;
 
 public class BadStaticImports {
+    
+    Object oheinz;
+    
     public static void main(String[] args) {
         asList("one");
+        System.out.println("da Heinz: " + new BadStaticImports().oheinz);
     }
 }
