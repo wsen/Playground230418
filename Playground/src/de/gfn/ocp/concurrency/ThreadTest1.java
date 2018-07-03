@@ -1,6 +1,7 @@
 package de.gfn.ocp.concurrency;
 
-import static java.lang.Thread.sleep;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -23,10 +24,15 @@ public class ThreadTest1 {
         Runnable r1 = new Runnable() {
             @Override
             public void run() {
+                System.out.println(Thread.currentThread().getState());
+                
 //                int i = 0;
                 while(true) {
                     synchronized(LOCK) {
+                        System.out.println(Thread.currentThread().getState());
                         System.out.println(++i + " " + Thread.currentThread().getName());
+                        if(i == 10000)
+                            break;
                     }
 //                    try {
 //                        Thread.sleep(500);
@@ -37,6 +43,7 @@ public class ThreadTest1 {
             }
         };
         Thread t11 = new Thread(r1);
+        System.out.println(t11.getState());
         t11.setPriority(1);
         t11.setName("Peter");
         t11.start();
@@ -52,6 +59,8 @@ public class ThreadTest1 {
                     
                     synchronized(LOCK) {
                         System.out.println(++i + " " + getName());
+                        if(i == 10000)
+                            break;
                     }
 //                    try {
 //                        sleep(500);
@@ -71,6 +80,8 @@ public class ThreadTest1 {
             while(true) {
                 synchronized(LOCK) {
                     System.out.println(++i + " " + Thread.currentThread().getName());
+                    if(i == 10000)
+                        break;
                 }
 //                try {
 //                    Thread.sleep(500);
@@ -85,6 +96,8 @@ public class ThreadTest1 {
         while(true) {
             synchronized(LOCK) {
                 System.out.println(++i + " " + name);
+                if(i == 10000)
+                    break;
             }
 //            try {
 //                Thread.sleep(100);
@@ -92,6 +105,14 @@ public class ThreadTest1 {
 //            catch(InterruptedException e) {
 //            }
         }
+        
+        
+        try {
+            t11.join();
+        } catch (InterruptedException ex) {
+        }
+        
+        System.out.println(t11.getState());
     }
 }
 
