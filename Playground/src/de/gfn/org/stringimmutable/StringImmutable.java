@@ -17,6 +17,12 @@ public class StringImmutable {
         i++;
         System.out.println(i);
         System.out.println(j);
+        
+        System.out.println("----concat----");
+        String abc = "";
+        abc.concat("abc");
+        abc.concat("def");
+        System.out.println(abc);
     }
 
 }
