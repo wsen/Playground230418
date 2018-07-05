@@ -79,3 +79,20 @@ class MatheAufgabe implements Callable<Integer> {
         return rand.nextInt(100);
     }
 }
+
+class MatheAufgabeMitNix implements Callable<Void> {
+
+    @Override
+    public Void call() throws Exception {
+        
+        return null;
+    }
+}
+
+class MatheAufgabeMitIntArr implements Callable<int[]> {
+
+    @Override
+    public int[] call() throws Exception {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+}
