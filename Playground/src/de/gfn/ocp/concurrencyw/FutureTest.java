@@ -78,6 +78,8 @@ public class FutureTest {
 }
 
 class MatheAufgabe implements Callable<Integer> {
+//class MatheAufgabeMitIntArr implements Callable<int[]> {
+
 
     @Override
     public Integer call() throws Exception {

@@ -28,5 +28,16 @@ public class Whiz {
 //        int x=1,y=2,z=3;
 //        System.out.println((z/y+z)*2);
 //        if(10 == 10.0){}
+
+        System.out.println("------- == ---------");
+        StringBuilder one = new StringBuilder();
+        StringBuilder two = new StringBuilder();
+        
+        StringBuilder three = one.append("a");
+        one.append("z"); //also pointing to the same Scheiss
+        System.out.println(one == two); // false
+        System.out.println(one == three); // true
+        System.out.println("one: " + one);
+        System.out.println("three: " + three);
     }
 }
