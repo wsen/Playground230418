@@ -23,7 +23,7 @@ public class StringB {
         System.out.println(sb.capacity());
         System.out.println(sb.length());
         
-        System.out.println("----------");
+        System.out.println("---- sb2 animal ------");
         StringBuilder sb2 = new StringBuilder("animal");
         
         System.out.println(sb2.capacity());

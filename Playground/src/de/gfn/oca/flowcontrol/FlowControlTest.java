@@ -8,33 +8,12 @@ public class FlowControlTest {
     
     public static void main(String[] args) {
         
-        if(true) {
-            
-        }
-        else {
-            
-        }
-        
-        
+
         if(true)
             System.out.println("Moin");
         else
             System.out.println("Nix");
-        
-        
-        if(true) {
-            
-        }
-        else if(true) {
-            
-        }
-        else if(true) {
-            
-        }
-        else {
-            
-        }
-        
+                
         
         if(true)
             System.out.println("Moin");
