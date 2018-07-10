@@ -11,7 +11,7 @@ package de.gfn.org.herritage;
  */
 
 class Mammal {
-   public Mammal(){}
+   public Mammal(){} //no argument constructor -> without no compiles
     
     public Mammal(int age) {
         System.out.println("Mammal");

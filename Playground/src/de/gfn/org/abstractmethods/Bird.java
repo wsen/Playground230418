@@ -12,9 +12,11 @@ package de.gfn.org.abstractmethods;
 
 public abstract class Bird {
     private void fly() { System.out.println("Bird is flying"); }
+    public abstract void Sturz();
     public static void main(String[] args) {
        Bird bird = new Pelican();
        bird.fly();
+       bird.Sturz();
        Pelican perlican = new Pelican();
        perlican.fly();
     }
@@ -22,4 +24,7 @@ public abstract class Bird {
 
 class Pelican extends Bird{
     protected void fly() { System.out.println("Pelican is flying"); }
+    public void Sturz(){
+        System.out.println("BoaH, ja Mai, etzt bin i eben glei grad gestürzt");
+    }
 }
