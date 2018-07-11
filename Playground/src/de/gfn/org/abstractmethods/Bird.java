@@ -19,6 +19,13 @@ public abstract class Bird {
        bird.Sturz();
        Pelican perlican = new Pelican();
        perlican.fly();
+       
+        System.out.println("----");
+        String blank  = " ";  // one space
+      String line = blank + "hello" + blank + blank;
+      line.concat("world");
+      String newLine  =  line.trim();
+      System.out.println((int)(line.length() + newLine.length()));
     }
  }
 
