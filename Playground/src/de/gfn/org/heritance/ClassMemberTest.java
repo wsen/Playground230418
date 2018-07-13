@@ -1,4 +1,4 @@
-package de.gfn.org.herritage;
+package de.gfn.org.heritance;
 
 /**
  *

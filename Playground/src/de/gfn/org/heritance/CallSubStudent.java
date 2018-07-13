@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package de.gfn.org.herritage;
+package de.gfn.org.heritance;
 
 /**
  *
