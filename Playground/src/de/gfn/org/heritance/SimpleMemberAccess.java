@@ -24,9 +24,11 @@ public class SimpleMemberAccess{
     public static void main(String[] args) {
         AA a = new AA();//1
         AA b = new BB();//2
-        System.out.println(b.i); //will print 10.
+        BB bb = new BB();
+        //System.out.println(b.i); //will print 10.
         //class A has f() so b.f() is legal.
-        System.out.println(b.i); //will print 20
+        //System.out.println(b.i); //will print 20
+        System.out.println(bb.i); //will print 20
     }
 }
 

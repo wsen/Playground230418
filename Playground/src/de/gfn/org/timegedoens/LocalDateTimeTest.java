@@ -41,8 +41,6 @@ public class LocalDateTimeTest {
         System.out.println(k);
         m = new Integer(a) + new Integer(b); //4
         System.out.println(m);
-       
-
     }
     
     //public String getDateString(LocalDateTime ldt){
