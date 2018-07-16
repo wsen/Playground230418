@@ -17,27 +17,48 @@ public class LukeFileWalker {
         
         Path p = Paths.get("iotest");
         
-        try {
-            Files.walk(p)
-            .filter(e -> e.toString().endsWith(".txt"));
-            //.forEach(System.out::println);
-            
-        } catch (Exception e) {
-            System.out.println(e);
-        }
+//        try {
+//            Files.walk(p)
+//            .filter(e -> e.toString().endsWith(".txt"));
+//            //.forEach(System.out::println);
+//            
+//        } catch (Exception e) {
+//            System.out.println(e);
+//        }
         
-        try {
-            Stream<Path> stream = Files.find(p, Integer.MAX_VALUE, 
-                    (path, attr) -> path.toString().endsWith(".txt") && 
-                            attr.lastModifiedTime().toMillis() > (System.currentTimeMillis() - 3600000));
-                    
-           stream.forEach(System.out::println);
-            
-            
-        } catch (Exception e) {
-            System.out.println(e);
-        }
+//        try {
+//            Stream<Path> stream = Files.find(p, Integer.MAX_VALUE, 
+//                    (path, attr) -> path.toString().endsWith(".txt") && 
+//                            attr.lastModifiedTime().toMillis() > (System.currentTimeMillis() - 3600000));
+//                    
+//           stream.forEach(System.out::println);
+//            
+//            
+//        } catch (Exception e) {
+//            System.out.println(e);
+//        }
+        
+        System.out.println("--------------");
+        
+//        try {
+//            Files.list(p)
+//                    .filter(pr -> Files.isRegularFile(pr))
+//                    .map(pr -> pr.toAbsolutePath())
+//                    .forEach(System.out::println);
+//            
+//        } catch (Exception e) {
+//            System.out.println(e);
+//        }
 
+        p = Paths.get("niotest/daten_copy.txt");
         
+        try {
+            Files.lines(p)
+                    .filter(pr -> pr.startsWith("H"))
+                    .forEach(s -> System.out.println(s));
+            
+        } catch (Exception e) {
+            System.out.println(e);
+        }
     }
 }
