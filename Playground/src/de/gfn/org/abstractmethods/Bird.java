@@ -26,6 +26,12 @@ public abstract class Bird {
       line.concat("world");
       String newLine  =  line.trim();
       System.out.println((int)(line.length() + newLine.length()));
+      
+        System.out.println("------------");
+          int i = 1234567890;
+     float f = i;
+     System.out.println("i: " +i + "f: " + f + "\n(i-f: ): ");// + (i - (int))(f);
+        System.out.print(i -(int)f);
     }
  }
 

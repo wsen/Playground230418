@@ -12,6 +12,10 @@ package de.gfn.org.exceptions;
 public class TestIntException {
 public static void main(String[] args){
       int j = 1;
+      
+int a = Integer.MIN_VALUE;
+            int b = -a;
+            System.out.println( a+ "   "+b);
       try{
          int i = doIt() / (j = 2);
          // int i interessiert gar nix, weils gleich in die Exception geht
