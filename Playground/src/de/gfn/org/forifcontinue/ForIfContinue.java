@@ -11,11 +11,25 @@ package de.gfn.org.forifcontinue;
  */
 public class ForIfContinue {
     public static void main(String[] args) {
+
+     String String = "";   //This is valid.
+     String : 
+     for(int i = 0; i< 10; i++) //This is valid too!
+     {
+        for (int j = 0; j< 10; j++){
+             if ( i+ j > 10 )  break String;
+             System.out.println("i: " + i + " j: " + j);
+        }
+       System.out.println( "hello");
+     }
+
         
-//--        Loop1: for(int x=0;x<5;x++){
+//--        
+//Loop1: for(int x=0;x<5;x++){
 //            //if(y==3) break Loop1;
 //            for(int y=0; y<3;y++){
-//                if(y==2)continue Loop1;
+//                //if(y==2)continue Loop1;
+//                if(y==2) break Loop1;
 //                  System.out.print(y);
 //            }
 //        }
