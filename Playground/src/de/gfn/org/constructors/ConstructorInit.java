@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package de.gfn.org.constructors;
 
 /**
@@ -10,7 +5,9 @@ package de.gfn.org.constructors;
  * @author wsen
  */
 public class ConstructorInit {
-   public static void main(String args[] ){ A b = new B("good bye");  }//0
+//   public static void main(String args[] ){ A b = new B("good bye");  }//0
+   //public static void main(String args[] ){ B b = new B("good bye");  }//0
+   public static void main(String args[] ){ A b = new B();  }//0
 }
 class A{
    A() { this("hello", " world");  }
