@@ -17,7 +17,7 @@ public class Lynx extends BigCat {
         Lynx lcat = new Lynx();
         System.out.println(lcat.name);
         System. out .println(lcat.hasFur);
-        System. out .println(lcat.hasPaws);
+        //System. out .println(lcat.hasPaws);
         System. out .println(lcat.id);
     }
 }
