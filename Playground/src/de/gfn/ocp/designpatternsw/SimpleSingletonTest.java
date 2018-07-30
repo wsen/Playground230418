@@ -35,7 +35,7 @@ class LazySingleton {
             //T2 //Instance OK? //Thread hat Kopie eines Zustandes im Speichers, dies bedeuted aber nicht dass,
             //T1 //Instance OK? //dieser mit dem des 2. synchronisiert wird.
             synchronized(LazySingleton.class){
-                if(instance == null) {  // kann immer nur von einem Thread druchalaufen werden
+                if(instance == null) {  // kann immer nur    von einem Thread druchalaufen werden
                     instance = new LazySingleton(); //LazySingleton als private Methode hier aufrufbar. Außerhalb nicht       
                 } //Doppplchecking Blocking
             }
