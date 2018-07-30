@@ -4,13 +4,18 @@
  * and open the template in the editor.
  */
 package de.gfn.ocp.designpatternsw;
-
+import de.gfn.ocp.designpatternsw.FahrzeugFactory.FahrzeugArt;
 /**
  * Factory Pattern
  * @author wsen
  */
 public class FacroryTest1 {
-    
+        Fahrzeug motorrad = FahrzeugFactory.getFahrzeug(FahrzeugArt.BOOT, "Honda", "ABC-5");
+        motorrad.gibGas();
+        
+        Fahrzeug pkw = FahrzeugFactory.getFahrzeug(FahrzeugArt.PKW, "Mercedes", "A-Klasse");
+        //pkw.gibGas();
+        pkw.gibGas();
 }
 
 //Abstrakte Klasse als Basis
@@ -52,18 +57,18 @@ class PKW extends Fahrzeug {
     public PKW(String marke, String typ) {
         super(marke, typ, 50, 180);
     }
-    
-    
 
     @Override
     public void gibGas() {
-       
+        System.out.println("gibBas PKW");
     }
 
     @Override
     public void bremseAb() {
-        
-    }   
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    
+
 }
 
 class Motorrad extends Fahrzeug {
@@ -107,18 +112,21 @@ class LKW extends Fahrzeug {
 //FACTORY class
 class FahrzeugFactory{
     
-    public static Fahrzeug getFahrzeug(String fahrzeug, String marke, String typ) {
-        switch(fahrzeug.toLowerCase()) {
-            case "pkw": return new PKW(marke, typ);
-            case "lkw": return new LKW(marke, typ);
-            case "motorrad": return new Motorrad(marke, typ);
+    public static Fahrzeug getFahrzeug(FahrzeugArt fahrzeug, String marke, String typ) {
+        switch(fahrzeug){//fahrzeug.toLowerCase()) {
+//            case "pkw": return new PKW(marke, typ);
+//            case "lkw": return new LKW(marke, typ);
+//            case "motorrad": return new Motorrad(marke, typ);
+            case PKW: return new PKW(marke, typ);
+            case LKW: return new LKW(marke, typ);
+            case MOTORRAD: return new Motorrad(marke, typ);
                 
         }
         throw new IllegalArgumentException("BOAHH");
     }
     
-    public enum FahrzeugArg {
-        PKW, LKW, MOTORRAD
+    static public enum FahrzeugArt { //von Haus aus static
+        PKW, LKW, MOTORRAD, BOOT
     }
     
 }
