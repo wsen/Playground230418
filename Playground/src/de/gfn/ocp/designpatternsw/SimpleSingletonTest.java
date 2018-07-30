@@ -31,9 +31,9 @@ class LazySingleton {
     
     //public static synchronized LazySingleton getInstance() { //synchronized -> Threads oder drinnen
     public static LazySingleton getInstance() { //synchronized -> Threads
-        if(instance == null) {
-            //T2
-            //T1
+        if(instance == null) { //Ausschließen dass von dem Singleton 2 Objekte gebaut werden
+            //T2 //Instance OK? //Thread hat Kopie eines Zustandes im Speichers, dies bedeuted aber nicht dass,
+            //T1 //Instance OK? //dieser mit dem des 2. synchronisiert wird.
             synchronized(LazySingleton.class){
                 if(instance == null) {  // kann immer nur von einem Thread druchalaufen werden
                     instance = new LazySingleton(); //LazySingleton als private Methode hier aufrufbar. Außerhalb nicht       
