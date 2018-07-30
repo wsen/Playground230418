@@ -35,7 +35,7 @@ class LazySingleton {
             //T2
             //T1
             synchronized(LazySingleton.class){
-                if(instance == null) {  // kann immer nur von einem Thread druchalaufen werden
+                if(instance == null) {  // kann immer nur    von einem Thread druchalaufen werden
                     instance = new LazySingleton(); //LazySingleton als private Methode hier aufrufbar. Außerhalb nicht       
                 } //Doppplchecking Blocking
             }
