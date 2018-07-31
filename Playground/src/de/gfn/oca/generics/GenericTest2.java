@@ -53,7 +53,7 @@ class StrGenClassSuper {
 }
 
 class StrGenClass2 implements GenI2 {
-    void machWas(String t){
+    public void machWas(String t){
         
     }
 }
