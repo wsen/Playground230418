@@ -17,10 +17,11 @@ public class ArrayList1 {
         //ArrayList<String> list = new ArrayList<>();
         list.add("Fluffy"); // [Fluffy]
         list.add("Webby"); // [Fluffy, Webby]
+        System.out.println(list.get(0));
         
         String[] array = new String[list.size()]; // empty array
         array[0] = list.get(1); // [Webby]
-        array[1] = list.get(0); // [Webby, Fluffy]
+        array[1] = list.get(0); // [Fluffy]
         for (int i = 0; i < array.length; i++)
         System.out.print(array[i] + "-");
     }
