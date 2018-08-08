@@ -1,3 +1,5 @@
+package de.gfn.ocp.console;
+
 
 import java.io.Console;
 
