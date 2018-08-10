@@ -25,7 +25,7 @@ public class InnerClassTest1 { //TopLevel public oder package Scope
     
     public static void main(String[] args) {
         InnerClassTest1 ict1 = new InnerClassTest1();
-       Inner i = ict1.new Inner();
+        Inner i = ict1.new Inner();
         //Zugriff außerhalb
         InnerClassTest1.Inner j = ict1.new Inner();
         System.out.println(i.zahl); // so ist ein Zugriff auf inner möglich
@@ -118,7 +118,7 @@ public class InnerClassTest1 { //TopLevel public oder package Scope
             System.out.println(outerStaticZahl);
             System.out.println(outerZahl);
             System.out.println(outerStaticPubZahl);
-            System.out.println(outerPubZahl);
+            //System.out.println(outerPubZahl);//non static var ref in static context
         }
     }
 }
