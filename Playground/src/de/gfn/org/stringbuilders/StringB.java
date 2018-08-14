@@ -30,6 +30,12 @@ public class StringB {
         System.out.println(sb2.length());
         //System.out.println(sb2.get);
         
+        System.out.println("---- StringBuilder Object, boya OCA 113 ----");
+        StringBuilder a = new StringBuilder("abc");
+        StringBuilder b = a.append("de");
+        b = b.append("f").append("g");
+        System.out.println("a=" + a);
+        System.out.println("b=" + b);
     }
     
 }
