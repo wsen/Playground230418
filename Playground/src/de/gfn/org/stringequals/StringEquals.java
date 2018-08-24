@@ -29,6 +29,7 @@ public class StringEquals {
         if ("Hello".equals(s)) System.out.println("one - hello.equals(s)"); //true    one
         if (t == s) System.out.println("two");              //false 
         if (t.equals(s)) System.out.println("three - t.equals(s)");       //true  tree
+        if (s.equals(t)) System.out.println("threeone - s.equals(t)");       //true  tree
         if ("Hello" == s) System.out.println("four - ==");       //true  four
         if ("Hello" == t) System.out.println("five");       //false
         

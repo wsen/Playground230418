@@ -14,6 +14,10 @@ public class Animal {
 }
 
 class Lion extends Animal implements Jumpable {
+    
+    @Override
+    public void fly(int speed){}
+    
     public static void main(String[] args) {
         Jumpable var1 = new Jumpable(); //Jumpable is abstract, cannot be instantiated
         Animal var2 = new Animal();
