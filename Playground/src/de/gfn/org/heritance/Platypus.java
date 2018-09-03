@@ -11,7 +11,7 @@ package de.gfn.org.heritance;
  */
 
 class Mammal {
-   public Mammal(){} //no argument constructor -> without no compiles
+   public Mammal(){System.out.println("Mammal pur");} //no argument constructor -> without no compiles
     
     public Mammal(int age) {
         System.out.println("Mammal");
@@ -19,10 +19,13 @@ class Mammal {
 }
 
 public class Platypus extends Mammal {
+    
     public Platypus() {
+       super();
        System.out.print("Platypus");
     }
     public static void main(String[] args) {
        new Mammal(5);
+       new Platypus();
     }
  }

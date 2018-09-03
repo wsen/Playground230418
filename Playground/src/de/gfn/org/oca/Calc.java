@@ -24,5 +24,11 @@ public class Calc extends Mid {
         
         System.out.println(n3);
         System.out.println(n4);
+        
+        System.out.println("--- Precedence ----");
+        int i = 10;
+        int j = 20;
+        int k = j += i/5; //PRECEDENCE: k = j = j + i/5
+        System.out.println(i + " : " + j + " : " + k);//10 : 22 : 22
     } 
 }

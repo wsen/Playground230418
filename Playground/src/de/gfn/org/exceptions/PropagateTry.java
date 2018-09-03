@@ -1,4 +1,5 @@
 package de.gfn.org.exceptions;
+import java.io.IOException;
 
 /**
  * Oracle Sierra Bates 342 Chapter 6: Flow Control and Exceptions
@@ -26,7 +27,7 @@ public class PropagateTry {
         }
     }
 
-    public void doStuff() {
+    public void doStuff() throws IOException {
         try {
             // risky IO things
         } catch (IOException ex) {

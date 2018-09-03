@@ -8,8 +8,8 @@ interface Pet {
     void eat();
 }
 
-class Dog implements Pet { public void eat (){}}
-class Beagle extends Dog { public void eat (){}}
+class Dog2 implements Pet { public void eat (){}}
+class Beagle extends Dog2 { public void eat (){}}
 
 class PetFoodA {
     public void go(Beagle b){

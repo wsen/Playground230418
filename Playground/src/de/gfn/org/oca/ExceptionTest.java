@@ -32,3 +32,12 @@ public class ExceptionTest {
         throw new SpecialException("Thrown at end of doSomenthingElse");
     }
 }
+
+/*
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
+	at de.gfn.org.oca.ExceptionTest.doSomething(ExceptionTest.java:27)
+	at de.gfn.org.oca.ExceptionTest.main(ExceptionTest.java:18)
+/Users/wsen/LAB/java/gfn/Playground230418/Playground/nbproject/build-impl.xml:1082: The following error occurred while executing this line:
+/Users/wsen/LAB/java/gfn/Playground230418/Playground/nbproject/build-impl.xml:778: Java returned: 1
+BUILD FAILED (total time: 1 second)
+*/

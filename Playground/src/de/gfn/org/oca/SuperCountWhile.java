@@ -15,7 +15,8 @@ public class SuperCountWhile {
         char space = ' ';
         int index = 0;
         int count = 0;
-        while (index < s.length() -1){// || s.charAt(index) == space) {
+        while (index < s.length() -1 || s.charAt(index) == space) {
+            System.out.println(s.charAt(index));
             count++;
             index = count;
         }

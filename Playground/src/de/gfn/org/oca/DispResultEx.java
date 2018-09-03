@@ -23,6 +23,8 @@ public class DispResultEx {
             System.err.println("second exception");
         } catch(Exception e) {
             System.err.println("third exception");
+            System.out.println(e);
+            //e.printStackTrace();
         }
     }
 }

@@ -7,8 +7,8 @@ package de.gfn.org.lambda;
 public class Animal {
 
     private String species;
-    private boolean canHop;
-    private boolean canSwim;
+    private boolean canHop;     //false
+    private boolean canSwim;    //false
 
     public Animal(String speciesName, boolean hopper, boolean swimmer) {
         species = speciesName;
