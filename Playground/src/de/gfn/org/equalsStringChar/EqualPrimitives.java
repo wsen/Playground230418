@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package de.gfn.org.equalsStringChar;
 
 /**
@@ -10,6 +5,14 @@ package de.gfn.org.equalsStringChar;
  * @author wsen
  */
 public class EqualPrimitives {
+    
+//    public boolean equals( obj) {
+//        if (obj instanceof Integer) {
+//            return value == ((Integer)obj).intValue();
+//        }
+//        return false;
+//    }
+    
     public static void main(String[] args) {
         Integer i1 = 1; 
         Integer i2 = new Integer(1);
@@ -24,5 +27,12 @@ public class EqualPrimitives {
         System.out.println(i1.equals(g1));
         System.out.println(i1.equals(b1));
 
+        Integer condition = new Integer("1");
+        //Integer condition = new Integer(1);
+        condition = condition + 1;
+        System.out.println("condition: " + condition);
+        
+        //char cA[3][2] = new char[][] {  { 'a', 'b', 'c' },   { 'a', 'b', 'c' }   };
+        //char[][] cA = { "1234", "1234",  "1234"  };
     }
 }

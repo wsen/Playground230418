@@ -19,6 +19,7 @@ public class PeriodBoya {
         LocalDate start = LocalDate.of(2015, Month.JANUARY, 1);
         LocalDate end = LocalDate.of(2015, Month.MARCH, 30);
         Period period = Period.ofMonths(1); // create a period
+        System.out.println("period: " + period);
         performAnimalEnrichment(start, end, period);
     }
 

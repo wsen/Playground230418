@@ -9,6 +9,7 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.Month;
+//import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.time.format.FormatStyle;
 
@@ -35,7 +36,13 @@ public class DateTimeTest {
         System.out.println("f: " + f);
         System.out.println("däit: " + däit);
         
-        
+        System.out.println("------");
+        //getDateString(LocalDateTime.parse("01 02 2015T 14:00"));
         
     }
+    
+    public String getDateString(LocalDateTime ldt) {
+        return DateTimeFormatter.ISO_ZONED_DATE_TIME.format(ldt);
+    }
+    
 }
