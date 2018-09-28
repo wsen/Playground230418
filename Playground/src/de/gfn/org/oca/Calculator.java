@@ -17,8 +17,21 @@ public class Calculator {
         
         do {
             sum += num; //variable sum might not have been initialized
+            System.out.println("wsum: " + sum + " num " + num);
         } while ((num--) > 1);
         
         System.out.println("The sum is: " + sum);
+        
+        num = 5;
+        //int sum; //not initialized
+        sum = 0;
+         //while ((num--) > 1) {
+         while (num-- > 1) { // num-- keine Zuweisung, d.h. dekrement kommt nicht zum Tragen
+            sum += num; //variable sum might not have been initialized
+            System.out.println("wsum: " + sum + " num " + num);
+        }
+        
+         System.out.println("The sum is: " + sum);
+         
     }
 }

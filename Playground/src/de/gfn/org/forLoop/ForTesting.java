@@ -18,6 +18,7 @@ public class ForTesting {
         //for (long y = 0, z = 4; x < 5 && y < 14; x++, y++) {
             System.out.print(y + " ");
         }
-        System.out.print(x);
+        System.out.print("x:" + x);
+        //System.out.print("y:" + y); // not defined
     }
 }

@@ -24,12 +24,14 @@ public class ExceptionTest {
     
     static void doSomething() throws SpecialException {
         int[] ages = new int[4];
-        ages[4] = 17;
+        ages[4] = 17; //ArrayIndexOutOfBoundsException
+//        ages[3] = 17; //alles in Ordnung
         doSomethingElse();
     }
     
     static void doSomethingElse() throws SpecialException {
         throw new SpecialException("Thrown at end of doSomenthingElse");
+//        throw new SpecialException(); //no-argument constructor
     }
 }
 

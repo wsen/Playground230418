@@ -20,20 +20,20 @@ public class JavaSubClassExceptioning {
         g.doStuff();
           //((Amazing) g).doStuff(). //Was ist das? Oberschwachsinn?
           
-        boolean b1 = false;
-        boolean b2  = false;
-        if (b2 = b1 == false){
-           System.out.println("true");
-        } else{
-           System.out.println("false");
-        }
-        
-        System.out.println("------ChainedStringBuilder Methods-----");
-        String s = "blooper";
-        StringBuilder sb = new StringBuilder(s);
-
-        sb.append(s.substring(4)).delete(3, 5);
-        System.out.println(sb);
+//        boolean b1 = false;
+//        boolean b2  = false;
+//        if (b2 = b1 == false){
+//           System.out.println("true");
+//        } else{
+//           System.out.println("false");
+//        }
+//        
+//        System.out.println("------ChainedStringBuilder Methods-----");
+//        String s = "blooper";
+//        StringBuilder sb = new StringBuilder(s);
+//
+//        sb.append(s.substring(4)).delete(3, 5);
+//        System.out.println(sb);
     }
 }
 

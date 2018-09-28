@@ -10,5 +10,10 @@ package de.gfn.org.oca;
  * @author wsen
  */
 public class FinalDefault {
-    private final int id; // Also keine default Initialiesierung  bei final !!
+    static final int id; //variable id not initialized in the default constructor
+    // Also keine default Initialiesierung  bei final !!
+    
+    public static void main(String[] args) {
+        System.out.println("id: " + id);
+    }
 }

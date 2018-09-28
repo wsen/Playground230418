@@ -11,4 +11,5 @@ package de.gfn.org.polym;
  */
 public interface HasTail {
     public boolean isTailStriped();
+//    int age = 10;
 }

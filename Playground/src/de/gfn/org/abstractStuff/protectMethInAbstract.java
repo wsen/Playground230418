@@ -16,8 +16,7 @@ abstract
 }
 
 public class protectMethInAbstract  extends A{
-   //public 
-        int m1(){ return 1; }
+   public int m1(){ return 1; }
    
 }
     

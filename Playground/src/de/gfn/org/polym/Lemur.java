@@ -15,6 +15,10 @@ class Primate {
         return true;
 //280 Chapter 5 ■ Class Design
     }
+    
+//    public boolean isTailStriped() {
+//        return true;
+//    }
 }
 
  class Lemur extends Primate implements HasTail {
@@ -23,14 +27,19 @@ class Primate {
         return false;
     }
     public int age = 10;
+    //byte static brick = 127;
+    static byte brick = 127;
 
     public static void main(String[] args) {
-        Lemur lemur = new Lemur();
+        Lemur lemur = new Lemur(); 
+// only one object, Lemur, is created and referenced
         System.out.println(lemur.age);
         HasTail hasTail = lemur;
-        System.out.println(hasTail.isTailStriped());
+        System.out.println("lemur: " +hasTail.isTailStriped());
+//        System.out.println(hasTail.age); // DOES NOT COMPILE
         Primate primate = lemur;
         System.out.println(primate.hasHair());
+//        System.out.println("primate: " + primate.isTailStriped());
     }
 }
 /*

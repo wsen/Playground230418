@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package de.gfn.org.switchi;
 
 /**
@@ -11,12 +6,12 @@ package de.gfn.org.switchi;
  */
 public class SwitchTest {
     public static void main(String[] args) {
-        //int condition; //=2;
+        //int condition; //needs to be initalized
         //int condition = 2; //ok
-        //long condition = 2;
+        //long condition = 2; //incompatible types -> Long nix für switch
         //Integer condition = new Integer("1"); //ok
-        //String condition = "1";
-        Byte condition = 1;
+        //String condition = "1"; //incompatible types
+        Byte condition = 1; //ok
 
 
 

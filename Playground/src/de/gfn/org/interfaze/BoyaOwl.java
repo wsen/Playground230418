@@ -10,10 +10,11 @@ public class BoyaOwl implements BoyaNocturnal {
     public boolean isBlind() {
         return false;
     }
-
+    
     public static void main(String[] args) {
         //BoyaNocturnal nocturnal = (BoyaNocturnal) new BoyaOwl();
         BoyaNocturnal nocturnal = new BoyaOwl();
-        System.out.println(nocturnal.isBlind());
+        System.out.println(nocturnal.isBlind()); //default
+//        System.out.println(BoyaNocturnal.isBlind());//static
     }
 }

@@ -17,5 +17,10 @@ public class WhileTest {
                 System.out.println("i mittenDrin: " + i + " j: " +j);
         } while (i<5);
         System.out.println("i Ende: " + i + " j: " +j);
+        
+        System.out.println("-------- long Wrapper --------");
+        String mStr = "123";
+        long m = Long.valueOf(mStr).longValue();
+        System.out.println("long m = " + m);
     }
 }

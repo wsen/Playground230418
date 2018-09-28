@@ -15,7 +15,9 @@ public class Calc extends Mid {
     public static void main(String[] args) {
         int n1 = 22, n2 = 2;
         // hier rein
-        //A Calc c = new Mid();
+        //A
+        // Calc c = new Mid(); //Mid cannot be converted to Calc
+        //Calc c = (Calc)new Mid(); //Compliled zwar, aber dann Exception !
         Calc c = new Calc(); //B
         int n3 = c.findMid(n1, n2);//B
         //C super.findMid(n1, n2); //super nur im Constructor 

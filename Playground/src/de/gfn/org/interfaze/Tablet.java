@@ -13,14 +13,14 @@ package de.gfn.org.interfaze;
 class Phone {}
 
 public class Tablet extends Phone implements Roamable {
-    Roamable var = (Roamable) new Phone();
+    
     
     public int fly(int speed){
         return 240;        
     }
     
     public static void main(String[] args) {
-        
+        Roamable var = (Roamable) new Phone();
     }
 }
 

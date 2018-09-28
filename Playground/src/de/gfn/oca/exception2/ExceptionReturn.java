@@ -19,7 +19,8 @@ public class ExceptionReturn {
            //throw new Exception();
         } catch (ArithmeticException e) {
             System.out.println(" Arithm: ");
-           return -1;
+            //throw new RuntimeException(e);
+            return -1;
         } catch (RuntimeException e) {
             System.out.println(" Runtime: ");
            return 0;

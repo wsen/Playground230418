@@ -11,8 +11,8 @@ package de.gfn.org.abstractmethods;
  */
 
  abstract class Reptile {
-    //public final void layEggs() { System.out.println("Reptile laying eggs");
-    public void layEggs() { System.out.println("Reptile laying eggs");
+    public final void layEggs() { System.out.println("Reptile laying eggs");
+    //public void layEggs() { System.out.println("Reptile laying eggs");
 }
     public static void main(String[] args) {
        Reptile reptile = new Lizard();

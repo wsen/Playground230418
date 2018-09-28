@@ -12,6 +12,20 @@ package de.gfn.org.exceptions;
 public class ExceptionMitReturn {
     public static void main(String args[]){
       try{
+          StringBuilder b = new StringBuilder("1");
+StringBuilder c = b.append("2");
+b.append("234");
+c.deleteCharAt(1);
+System.out.println("Equals? " + (b == c));
+System.out.println("B=" + b);
+System.out.println("C=" + c);
+
+StringBuilder s1 = new StringBuilder();
+ StringBuilder s2 = new StringBuilder(5);
+ StringBuilder s3 = new StringBuilder(6.0);
+ StringBuilder s4 = new StringBuilder("b");
+ StringBuilder s5 = new StringBuilder(false);
+
          m1();
       }catch(IndexOutOfBoundsException e){
          System.out.println("1");

@@ -12,6 +12,7 @@ class XX {
 }
 
 class YY extends XX {
+    @Override
     public void mX(){
         System.out.println("Xm2");
     }
@@ -23,8 +24,9 @@ class YY extends XX {
 
 public class ClassCast {
     public static void main(String[] args) {
-        XX xRef = new YY(); //OK
+        XX xRef = new YY();
         YY yRef = (YY) xRef;
+        //YY yRef = (YY) new XX(); // ClassCastException
         yRef.mY();
         xRef.mX();
     }

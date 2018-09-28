@@ -32,10 +32,13 @@ public class DateTimeTest10 {
         machWas(new ArrayList());
         
         int i = 10;
+        int j = 10;
         
         i = i++ + i++ + i++;
+        //j = j; j=j+1;
         
         System.out.println(i);
+        System.out.println(j);
     }
     
     static void machWas(List l) {

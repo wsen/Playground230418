@@ -11,4 +11,5 @@ package de.gfn.org.interfaze;
  */
 public interface BoyaNocturnal {
     default boolean isBlind() { return true; }
+    //static boolean isBlind(){ return true; }
 }

@@ -15,6 +15,7 @@ public class BvarCount {
         System.out.println("brick is " + brick);
         boolean bVar1 = true;
         int count = 8;
+        System.out.println("bVar: " + bVar);
         do {
             System.out.println("Hello java! " + count);
             if (count >=7) {

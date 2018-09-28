@@ -19,12 +19,14 @@ class Lion extends Animal implements Jumpable {
     public void fly(int speed){}
     
     public static void main(String[] args) {
-        Jumpable var1 = new Jumpable(); //Jumpable is abstract, cannot be instantiated
+//        Jumpable var1 = new Jumpable(); //Jumpable is abstract, cannot be instantiated
         Animal var2 = new Animal();
         Animal var22 = new Lion();
-        Lion var3 = new Animal(); //incompatible Types, Parent Class cannot be convertet into a child
-        Jumpable var4 = new Animal(); //incompatible
-        Jumpable var6 = (Jumpable)(new Animal());
+//        Lion var3 = new Animal(); //incompatible Types, Parent Class cannot be convertet into a child
+//        Lion var3 = (Lion)new Animal();
+//        Jumpable var4 = new Animal(); //incompatible
+        Jumpable var5 = new Lion(); 
+//        Jumpable var6 = (Jumpable)(new Animal()); //Animal cannot be cast to de.gfn.org.interfaze.Jumpable      
         Jumpable var7 = (Jumpable)(new Lion());
     }
 }

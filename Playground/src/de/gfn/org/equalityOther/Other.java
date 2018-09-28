@@ -3,16 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package de.gfn.org.heritance;
+package de.gfn.org.equalityOther;
 
 /**
  *
  * @author wsen
  */
-public class Baap {
-    public int h = 4;
-    public int getH(){
-        System.out.println("Baap" + h);
-        return h;
-    }
+public class Other {
+    public static String hello = "Hello";
 }
